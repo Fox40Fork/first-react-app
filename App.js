@@ -3,6 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import exampleScreen from './screens/exampleScreen';
+import ExampleScreen2 from './screens/exampleScreen2';
 
 const Stack = createStackNavigator();
 
@@ -10,7 +11,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name = "F1 car" component = {exampleScreen}></Stack.Screen>
+        <Stack.Screen name = "Laugh" component = {ExampleScreen2}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
