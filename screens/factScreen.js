@@ -17,15 +17,15 @@ const FactScreen = () => {
 
 const styles = StyleSheet.create({
     factOne: {
-        color: blue,
-        fontStyle: bold
+        color: "blue",
+        fontStyle: "bold"
     },
     factTwo: {
         fontSize: 10,
-        fontStyle: italic
+        fontStyle: "italic"
     },
     factThree: {
-        color: orange
+        color: "orange"
     }
 })
 export default FactScreen;

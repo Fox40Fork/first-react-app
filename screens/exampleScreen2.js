@@ -1,7 +1,7 @@
 import React from "react";
 import {Text, StyleSheet, View} from "react-native";
 
-const ExampleScreen1 = () => {
+const ExampleScreen2 = () => {
     //stvaranje varijable koristeći let
     let message = "DR: Ola todos!"
     return (
@@ -14,14 +14,14 @@ const ExampleScreen1 = () => {
 
 const styles = StyleSheet.create({
     yellowFont: {
-        color: yellow
+        color: "yellow"
     },
     fontStyle: {
         fontSize: 20,
-        fontStyle: italic
+        fontStyle: "italic"
     },
     blueFont: {
-        color: blue
+        color: "blue"
     }
 })
 export default ExampleScreen2;

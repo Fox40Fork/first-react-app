@@ -29,12 +29,12 @@ const ListMovies = () => {
 
 const style = StyleSheet.create({
     newMovies: {
-        fontStyle: bold,
-        color: black
+        fontStyle: "bold",
+        color: "black"
     },
     oldMovies: {
-        fontStyle: italic,
-        color: brown
+        fontStyle: "italic",
+        color: "brown"
     }
 })
 
