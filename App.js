@@ -6,6 +6,8 @@ import { StyleSheet, Text, View } from 'react-native';
 //import ExampleScreen2 from './screens/exampleScreen2';
 //import ListScreen from './screens/ListScreen';
 import Challange2Screen from './screens/Challange2';
+import ButtonScreen from './screens/ButtonScreen';
+import ButtonScreen2 from './screens/ChallangeButtonScreen';
 
 const Stack = createStackNavigator();
 
@@ -13,7 +15,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name = "Hobbies" component = {Challange2Screen}></Stack.Screen>
+        <Stack.Screen name = "Button" component = {ButtonScreen2}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
