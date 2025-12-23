@@ -19,7 +19,7 @@ const ColorScreen = () => {
          />
         <Button 
             title = "Go back to Menu"
-            onClick = {() => props.navigation.navigate("Menu")}
+            onPress = {() => props.navigation.navigate("Menu")}
         />    
     </View>
 }

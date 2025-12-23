@@ -8,22 +8,22 @@ const MenuScreen = (props) => {
             <Button
                 title = "Go to button screen"
                 color = "purple"
-                onClick = {() => props.navigation.navigate("Button")}
+                onPress = {() => props.navigation.navigate("Button")}
             />
             <Button
                 title = "Go to color screen"
                 color = "green"
-                onClick = {() => props.navigation.navigate("Color")}
+                onPress = {() => props.navigation.navigate("Color")}
             />
             <Button
                 title = "Go to fruit screen"
                 color = "red"
-                onClick = {() => props.navigation.navigate("Fruit")}
+                onPress = {() => props.navigation.navigate("Fruit")}
             />
             <Button
                 title = "Go to Home screen"
                 color = "blue"
-                onClick = {() => props.navigation.navigate("Home")}
+                onPress = {() => props.navigation.navigate("Home")}
             />
         </View>
     )
