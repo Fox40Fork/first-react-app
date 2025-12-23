@@ -1,7 +1,7 @@
 import React from "react";
 import {Text, StyleSheet, View, Button, TouchableOpacity} from "react-native";
 
-const ButtonScreen = () =>{
+const ButtonScreen = (props) =>{
     let counter = 0;
     return (
     <View>
@@ -14,6 +14,11 @@ const ButtonScreen = () =>{
         <TouchableOpacity style = {style.buttonStyle} onPress = {() => console.log("Touchable opacity clicked: ", counter++)}>
             <Text style = {style.buttonStyle}>Touchable opacity :O</Text>
         </TouchableOpacity> 
+
+        <Button 
+            title = "Go back to Menu"
+            onClick = {() => props.navigation.navigate("Menu")}
+        />
     </View>
     );
 };

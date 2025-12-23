@@ -8,14 +8,24 @@ import { StyleSheet, Text, View } from 'react-native';
 import Challange2Screen from './screens/Challange2';
 import ButtonScreen from './screens/ButtonScreen';
 import ButtonScreen2 from './screens/ChallangeButtonScreen';
+import MenuScreen from './screens/MenuScreen';
+import ColorScreen from './screens/ColorScreen';
+import FruitScreen from './screens/FruitScreen';
+import HomeScreen from './screens/HomeScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName='Main'>
+        <Stack.Screen name = "Main" component = {MenuScreen}></Stack.Screen>
         <Stack.Screen name = "Button" component = {ButtonScreen2}></Stack.Screen>
+        <Stack.Screen name = "Color" component = {ColorScreen}></Stack.Screen>
+        <Stack.Screen name = "Fruit" component = {FruitScreen}></Stack.Screen>
+        <Stack.Screen name = "Home" component = {HomeScreen}></Stack.Screen>
+        <Stack.Screen name = "Profile" component = {ProfileScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

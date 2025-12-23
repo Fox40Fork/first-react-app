@@ -9,6 +9,11 @@ const FruitScreen = () => {
         <View>
             <Text>{fruit1}</Text>
             <Text>{fruit2}</Text>
+
+            <Button 
+                title = "Go back to Menu"
+                onClick = {() => props.navigation.navigate("Menu")}
+            />
         </View>
     )
 };

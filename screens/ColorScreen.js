@@ -8,7 +8,7 @@ const colors = [
     {name: "Papaya"},
 ]
 
-const ListColors = () => {
+const ColorScreen = () => {
     return <View>
         <Text>List of colors</Text>
         <FlatList
@@ -16,10 +16,14 @@ const ListColors = () => {
         renderItem={({item}) => {
             return <Text>{item.name}</Text>
         }}
-         />    
+         />
+        <Button 
+            title = "Go back to Menu"
+            onClick = {() => props.navigation.navigate("Menu")}
+        />    
     </View>
 }
 
 const style = StyleSheet.create({})
 
-export default ListColors;
+export default ColorScreen;
