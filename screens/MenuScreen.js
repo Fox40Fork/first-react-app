@@ -25,6 +25,11 @@ const MenuScreen = (props) => {
                 color = "blue"
                 onPress = {() => props.navigation.navigate("Home")}
             />
+            <Button
+                title = "Go to Students screen"
+                color = "blue"
+                onPress = {() => props.navigation.navigate("Students")}
+            />
         </View>
     )
 };
@@ -33,7 +38,7 @@ const style = StyleSheet.create({
     txtStyle: {
         textAlign: "center",
         fontSize: 30
-    }
+    },
 })
 
 export default MenuScreen;
