@@ -1,18 +1,27 @@
 import React from "react";
-import {Text, StyleSheet, View, props, Image} from "react-native";
+import {Text, StyleSheet, View, props, Image, TouchableOpacity} from "react-native";
 
 const StudentDetails = (props) => {
-    return <View style = {styles.container}>
-        <View style = {styles.cardWrapper}>
-            <View style = {styles.imageWrapper}>
-                <Image source = {props.image} style = {styles.img}/>
-            </View>
-            <View style = {styles.infoWrapper}>
-                <Text style = {styles.name}>{props.name}</Text>
-                <Text>{props.description}</Text>
+    let isFavorite = false;
+
+    return <TouchableOpacity onClick = {alert("This student has been clicked")}>
+            <View style = {styles.container}>
+                <View style = {styles.cardWrapper}>
+                    <View style = {styles.imageWrapper}>
+                        <Image source = {props.image} style = {styles.img}/>
+                    </View>
+                <View style = {styles.infoWrapper}>
+                    <Text style = {styles.name}>{props.name}</Text>
+                    <Text>{props.description}</Text>
+                </View>
+                <TouchableOpacity onPress={() => {
+                    isFavorite = true;
+                }}>
+                    <Image source = "../assets/heart.png" style = {isFavorite ? styles.heartImgClicked : styles.heartImg}/>
+                </TouchableOpacity>
             </View>
         </View>
-    </View>
+    </TouchableOpacity>
 }
 
 const styles = StyleSheet.create({
@@ -34,6 +43,16 @@ const styles = StyleSheet.create({
         height: 100,
         borderTopLeftRadius: 8,
         borderBottomLeftRadius: 8
+    },
+    heartImg: {
+        width: 20,
+        height: 20,
+        color: "white"
+    },
+    heartImgClicked: {
+        width: 20,
+        height: 20,
+        color: "white"
     },
     infoWrapper: {
         margin: 20

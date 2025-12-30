@@ -5,9 +5,9 @@ import StudentDetails from "../components/studentDetails";
 const StudentsScreen = () => {
     return <View>
         <Text>Students Screen</Text>
-        <StudentDetails name = "Fernando" image = {require("..assets/nando.jpg")} description = "forehead pic"/>
-        <StudentDetails name = "Kimi" image = {require("..assets/kimi.jpg")} description = "kimi"/>
-        <StudentDetails name = "Carlos" image = {require("..assets/carlos.jfif")} description = "carlos"/>
+        <StudentDetails name = "Fernando" image = {require("../assets/nando.jpg")} description = "forehead pic"/>
+        <StudentDetails name = "Kimi" image = {require("../assets/kimi.jpg")} description = "kimi"/>
+        <StudentDetails name = "Carlos" image = {require("../assets/kimi.jpg")} description = "carlos"/>
     </View>
 }
 
