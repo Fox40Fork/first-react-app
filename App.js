@@ -16,6 +16,7 @@ import ProfileScreen from './screens/ProfileScreen';
 import StudentsScreen from './screens/StudentsScreen';
 import BoxScreen from './screens/BoxScreen';
 import BoxChallange from './screens/BoxChallange';
+import APIChallangeScreen from './screens/APIChallangeScreen';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,7 @@ export default function App() {
         <Stack.Screen name = "Students" component = {StudentsScreen}></Stack.Screen>
         <Stack.Screen name = "Box" component = {BoxScreen}></Stack.Screen>
         <Stack.Screen name = "BoxChallange" component = {BoxChallange}></Stack.Screen>
+        <Stack.Screen name = "APIChallangeScreen" component = {APIChallangeScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

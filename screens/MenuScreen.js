@@ -35,6 +35,11 @@ const MenuScreen = (props) => {
                 color = "blue"
                 onPress = {() => props.navigation.navigate("Box")}
             />
+            <Button
+                title = "Go to API Challange screen"
+                color = "blue"
+                onPress = {() => props.navigation.navigate("APIChallangeScreen")}
+            />
         </View>
     )
 };
