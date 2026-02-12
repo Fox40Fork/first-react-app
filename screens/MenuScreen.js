@@ -40,6 +40,11 @@ const MenuScreen = (props) => {
                 color = "blue"
                 onPress = {() => props.navigation.navigate("APIChallangeScreen")}
             />
+            <Button
+                title = "Go to Countries screen"
+                color = "blue"
+                onPress = {() => props.navigation.navigate("CountriesScreen")}
+            />
         </View>
     )
 };
