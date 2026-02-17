@@ -45,6 +45,11 @@ const MenuScreen = (props) => {
                 color = "blue"
                 onPress = {() => props.navigation.navigate("CountriesScreen")}
             />
+            <Button
+                title = "Go to Products screen"
+                color = "blue"
+                onPress = {() => props.navigation.navigate("ProductsScreen")}
+            />
         </View>
     )
 };
